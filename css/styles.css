@@ -6,32 +6,31 @@
   text-decoration: none;
 }
 
-:root{
+:root {
   /** –––––––––––––––IRIS */
-  --primary-brend:#4d5ae5; 
+  --primary-brend: #4d5ae5;
   /** –––––––––––––––OCEAN */
-  --pressed-state:#404BBF;
+  --pressed-state: #404bbf;
   /** –––––––––––––––NAVI-BLUE */
-  --dark:#2e2f42;
+  --dark: #2e2f42;
   /** –––––––––––––––GREEN */
-  --success:#31D0AA;
+  --success: #31d0aa;
   /** –––––––––––––––SLATE */
-  --text:#434455;
+  --text: #434455;
   /** –––––––––––––––LIGHT-SLATE */
-  --subtle-text:#8E8F99;
+  --subtle-text: #8e8f99;
   /** –––––––––––––––CORNFLOWER */
-  --accent:#E7E9FC;
+  --accent: #e7e9fc;
   /** –––––––––––––––CLOUD */
-  --light:#F4F4FD;
+  --light: #f4f4fd;
   /** –––––––––––––––NAVI-BLUE-MODAL */
-  --modal-overlay:rgba(46, 47, 66, 0.4);
+  --modal-overlay: rgba(46, 47, 66, 0.4);
   /** –––––––––––––––GREY */
-  --hero-background:rgba(46, 47, 66, 0.7);
+  --hero-background: rgba(46, 47, 66, 0.7);
   /** –––––––––––––––WHITE */
-  --white-background:#ffffff;
+  --white-background: #ffffff;
   /** –––––––––––––––DAIRY */
-  --modal-background:#fcfcfc;
-
+  --modal-background: #fcfcfc;
 }
 
 body {
@@ -67,7 +66,7 @@ body {
 }
 
 .header-item-navigation:hover,
-.header-item-navigation:focus{
+.header-item-navigation:focus {
   color: var(--pressed-state);
 }
 
@@ -82,7 +81,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text);
 }
 
 .address-item-link:hover,
@@ -90,19 +88,20 @@ body {
   color: var(--pressed-state);
 }
 
-.description-text{
+.description-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.name-title{ font-weight: 500;
+.name-title {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.section-title{
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -148,7 +147,6 @@ body {
 }
 
 .features-text {
-  color: var(--text);
 }
 
 /* -------Works section------- */
@@ -176,7 +174,6 @@ body {
 }
 
 .team-posotion {
-  color: var(--text);
 }
 
 /* --------------Portfolio Page-------------- */
@@ -213,7 +210,6 @@ body {
 }
 
 .partfolio-type {
-  color: var(--text);
 }
 
 /* ---------------------Footer--------------------- */
