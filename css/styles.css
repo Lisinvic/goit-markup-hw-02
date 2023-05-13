@@ -7,37 +7,52 @@
 }
 
 :root{
-  --primary-brend:#4d5ae5;
+  /** –––––––––––––––IRIS */
+  --primary-brend:#4d5ae5; 
+  /** –––––––––––––––OCEAN */
   --pressed-state:#404BBF;
+  /** –––––––––––––––NAVI-BLUE */
   --dark:#2e2f42;
+  /** –––––––––––––––GREEN */
   --success:#31D0AA;
+  /** –––––––––––––––SLATE */
   --text:#434455;
+  /** –––––––––––––––LIGHT-SLATE */
   --subtle-text:#8E8F99;
+  /** –––––––––––––––CORNFLOWER */
   --accent:#E7E9FC;
+  /** –––––––––––––––CLOUD */
   --light:#F4F4FD;
+  /** –––––––––––––––NAVI-BLUE-MODAL */
   --modal-overlay:rgba(46, 47, 66, 0.4);
+  /** –––––––––––––––GREY */
   --hero-background:rgba(46, 47, 66, 0.7);
+  /** –––––––––––––––WHITE */
   --white-background:#ffffff;
+  /** –––––––––––––––DAIRY */
   --modal-background:#fcfcfc;
 
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--text);
 }
 
-/** _____Header______ */
+/* -------Header------- */
 
 .header-logo {
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.17;
   text-transform: uppercase;
-  color: var(--dark);
+  letter-spacing: 0.03em;
+  color: var(--primary-brend);
 }
 
-.header-logo-web {
-  color: var(--primary-brend);
+.header-logo-studio {
+  color: var(--dark);
 }
 
 .header-item {
@@ -58,8 +73,11 @@ body {
 
 /* Arrdess */
 
-.address-item-link {
+.address {
   font-style: normal;
+}
+
+.address-item-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -72,7 +90,27 @@ body {
   color: var(--pressed-state);
 }
 
-/* Hero section */
+.description-text{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.name-title{ font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section-title{
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* -------Hero section------- */
 .hero {
   background: var(--dark);
 }
@@ -82,10 +120,12 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--white-background);
 }
 
 .hero-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -93,6 +133,7 @@ body {
   color: var(--white-background);
   background: var(--primary-brend);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -100,65 +141,47 @@ body {
   background: var(--pressed-state);
 }
 
-/* Features section */
+/* -------Features section------- */
 
 .features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--dark);
 }
 
 .features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--text);
 }
 
-/* Works section */
+/* -------Works section------- */
 
 .works-title {
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--dark);
 }
 
-/* Team section */
+/* -------Team section------- */
 
 .team {
-  background: var(--modal-background);
+  background: var(--light);
 }
 
 .team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--dark);
 }
 
+.team-card {
+  background-color: var(--white-background);
+}
+
 .team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--dark);
 }
 
 .team-posotion {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--text);
 }
 
-/* Portfolio Page */
+/* --------------Portfolio Page-------------- */
 
-/* Filters */
+/* -------Filters------- */
 
 .filters-button {
   background: var(--light);
@@ -173,6 +196,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-brend);
+  background-color: var(--light);
   cursor: pointer;
 }
 
@@ -182,24 +206,17 @@ body {
   color: var(--white-background);
 }
 
-/* Partfolio Projects */
+/* -------Partfolio Projects------- */
 
 .portfolio-project {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--dark);
 }
 
 .partfolio-type {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--text);
 }
 
-/* Footer */
+/* ---------------------Footer--------------------- */
 
 .footer {
   background: var(--dark);
@@ -207,15 +224,15 @@ body {
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
-
+  font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  text-decoration: none;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light);
 }
 
-.footer-logo-web {
+.footer-logo-studio {
   color: var(--primary-brend);
 }
 
