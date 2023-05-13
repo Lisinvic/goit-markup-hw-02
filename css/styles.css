@@ -36,6 +36,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
+  background-color: var(--white-background);
 }
 
 /* -------Header------- */
@@ -59,6 +60,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: inherit;
 }
 
 .header-item-navigation {
@@ -210,6 +212,7 @@ body {
 }
 
 .partfolio-type {
+  color: inherit;
 }
 
 /* ---------------------Footer--------------------- */
@@ -225,11 +228,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light);
+  color: var(--primary-brend);
 }
 
 .footer-logo-studio {
-  color: var(--primary-brend);
+  color: var(--light);
 }
 
 .footer-text {
